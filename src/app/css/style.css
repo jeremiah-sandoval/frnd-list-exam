@@ -1,0 +1,228 @@
+*,
+*:after,
+*:before{
+  margin: 0;
+  padding: 0;
+}
+ul, ol{
+  list-style: none;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.25;
+  color: #292b2c;
+}
+.clearfix:after{
+  clear:both;
+  display: block;
+  visibility: hidden;
+  height: 0;
+  content: "";
+}
+a{
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  color: #292b2c;
+  outline: none;
+  text-decoration: none;
+  background: transparent;
+  vertical-align: baseline;
+}
+a:hover {
+  color:#292b2c;
+}
+.hide{
+  display:none;
+}
+.show{
+  display: block !important;
+}
+.btnContainer{
+  margin-top: 10px;
+}
+.btn{
+  padding: 6px 12px;
+  border-radius: 2px;
+  border-style: none;
+  margin-right: 5px;
+}
+  .btn-primary{
+    border: 1px solid #222222;
+    background-color: #292b2c;
+    color: #fff;
+  }
+  .btn-delete{
+    border: 1px solid #dd0000;
+    background-color: #ff2424;
+    color: #fff;
+  }
+.container {
+  padding: 0px 20px
+}
+header{
+  padding: 30px 0px;
+}
+header .navbar-collapse{
+  float: right;
+  margin-top: 20px;
+}
+header ul.navbar-nav > li{
+  display: inline-block;
+  padding: 10px;
+  margin-right: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+header ul.navbar-nav > li:last-child{
+  margin-right: 0px;
+}
+header ul.navbar-nav > li > a.active:before,
+header ul.navbar-nav > li > a:hover:before{
+  content: "";
+  width: 0;
+  height: 2px;
+  display: block;
+  position: absolute;
+  bottom: 3px;
+  background-color: #70c8d4;
+}
+.navbar-toggler{
+  display: none;
+  float: right;
+  color: #292b2c;
+  padding: 10px 0;
+  font-size: 28px;
+  background: transparent;
+  border: 1px solid transparent;
+}
+.row{
+  display: flex;
+}
+.col-md-3{
+  width: 31%;
+  display: inline-block;
+}
+.col-md-4{
+  width: 25%;
+  display: inline-block;
+  padding: 20px;
+}
+#FriendsApp .col-md-3{
+  margin: 0 10px 10px 0;
+  border: 1px solid #777;
+  text-align: center;
+}
+#FriendsApp .col-md-3:hover{
+  background-color: #eee;
+}
+#FriendsApp .col-md-3 form{
+  padding: 10px;
+}
+#FriendsApp .col-md-3 form label{
+  font-weight: 600;
+  padding-right: 5px;
+}
+footer{
+  margin-top: 20px;
+}
+footer .col-md-4 .copyright{
+  font-size: 10px;
+  display: block;
+}
+footer .col-md-4 h4{
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 18px;
+}
+footer .col-md-4 p,
+footer .col-md-4 p > *{
+  font-size: 12px;
+  color: #777777
+}
+.logo-footer{
+  padding-left: 10px;
+}
+.social-icons{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 18px;
+  font-size: 22px;
+}
+.social-icons li{
+  display: inline-block;
+}
+.social-icons a{
+  color: #312f2f;
+  transition: color 0.3s ease;
+}
+.social-icons li:not(:last-child){
+  margin-right: 12px;
+}
+
+@media(min-width:1024px){
+  .bodyWrapper{
+    width: 1024px;
+    margin: 0px auto;
+  }
+}
+@media(min-width: 768px){
+  footer .col-md-4:first-child{
+    padding-left: 0px
+  }
+  footer .col-md-4:last-child{
+    padding-right: 0px;
+  }
+}
+@media(min-width:768px) and (max-width:1023px){
+  .bodyWrapper{
+    width: 768px;
+    margin: 0 auto;
+  }
+  .social-icons {
+    margin-top: 0px;
+  }
+}
+@media(min-width:320px) and (max-width:767px){
+  .bodyWrapper{
+    width: 100$;
+    margin: 0 20px;
+  }
+  #containerNavbar{
+    display: none;
+    margin-bottom: 20px;
+  }
+  .navbar-toggler{
+    display: block;
+  }
+  header .navbar-collapse{
+    width: 100%;
+  }
+  header ul.navbar-nav > li {
+    display: block;
+    padding: 2px;
+    margin-right: 0px;
+    text-align: center;
+  }
+  .row{
+    display: block;
+  }
+  .col-md-4{
+    width: 100%;
+    text-align: center;
+    padding: 0 10px 15px;
+  }
+  #FriendsApp .col-md-3{
+    width: 100% !important;
+  }
+  footer .col-md-4 h4{
+    margin-bottom: 5px;
+  }
+  .social-icons {
+    margin-top: 0px;
+  }
+}

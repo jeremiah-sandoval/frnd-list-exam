@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <title>REACT - Friends-List-App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="bodyWrapper">
+      <header class="header">
+        <nav class="navbar navbar-toggleable-md">
+          <div class="container">
+            <button id="navbar-toggler" class="navbar-toggler" type="button" name="button">
+              <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
+            </button>
+            <a class="navbar-brand" href="#">
+              <img src="./app/img/frnd.png" alt="">
+            </a>
+            <div class="navbar-collapse " id="containerNavbar">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Friend</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <div id="FriendsApp">
+
+      </div>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row visible">
+            <div class="col-md-4">
+              <p class="logo-footer">
+                <img class="clearfix" src="./app/img/frnd-footer.png" alt="">
+                <!-- <a class="copyright clearfix" href="#">Copyright FRND(c) 2017 Copyright Holder All Rights Reserved.</a> -->
+              </p>
+            </div>
+            <div class="col-md-4">
+              <h4>Copyright</h4>
+              <p>FRND (c) 2017 Copyright Holder All Rights Reserved.</p>
+            </div>
+            <div class="col-md-4">
+              <h4>Contact</h4>
+              <p>
+                <a href="mailto:jeremiah.sandoval@gmail.com" class="email clearfix">jeremiah.sandoval@gmail.com</a>
+                <a href="callto:09770194425">+63 977 019 4425</a>
+                <!-- Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. -->
+              </p>
+            </div>
+            <div class="col-md-4">
+              <ul class="social-icons">
+                <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                <li><a href=""><i class="fa fa-behance"></i></a></li>
+                <li><a href=""><i class="fa fa-pinterest"></i></a></li>
+                <li><a href=""><i class="fa fa-instagram"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="/app/bundle.js" charset="utf-8"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" charset="utf-8"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+      $('#navbar-toggler').click(function() {
+          $("#containerNavbar").toggleClass('show');
+      });
+    });
+    </script>
+  </body>
+</html>
